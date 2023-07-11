@@ -5,7 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
+/**
+  *This class is used to display the list of Campaigns Partially
+  */
 public class ChildWindowCampaignPage {
 	// Declaration
 	@FindBy(id = "search_txt")private WebElement searchtxtInChildWindow;
