@@ -5,7 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
+/**
+*This class is used to Open the List Organizations page Partially 
+*
+/
 public class ChildWindowPageOrg {
 	// Declaration
 	@FindBy(id = "search_txt")private WebElement searchtxtInChildWindow;
