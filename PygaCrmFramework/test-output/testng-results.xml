@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="3" ignored="3" total="7" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
     <line>
       <![CDATA[DataBase is Connected ]]>
@@ -8,100 +8,149 @@
       <![CDATA[BeforeTest]]>
     </line>
     <line>
-      <![CDATA[BROWSER IS LAUNCHED ]]>
-    </line>
-    <line>
-      <![CDATA[Successfully Logged to Application]]>
-    </line>
-    <line>
-      <![CDATA[Log Out from Application]]>
-    </line>
-    <line>
-      <![CDATA[Successfully Logged to Application]]>
-    </line>
-    <line>
-      <![CDATA[Log Out from Application]]>
-    </line>
-    <line>
-      <![CDATA[Successfully Logged to Application]]>
-    </line>
-    <line>
-      <![CDATA[Log Out from Application]]>
-    </line>
-    <line>
-      <![CDATA[Successfully Logged to Application]]>
-    </line>
-    <line>
-      <![CDATA[Log Out from Application]]>
-    </line>
-    <line>
-      <![CDATA[Browser is Closed ]]>
-    </line>
-    <line>
       <![CDATA[AfterTest]]>
     </line>
     <line>
       <![CDATA[DataBase connection  is Closed ]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-07-11T10:46:02 IST" name="Default suite" finished-at="2023-07-11T10:46:48 IST" duration-ms="45583">
+  <suite started-at="2023-07-11T15:26:56 IST" name="Default suite" finished-at="2023-07-11T15:26:57 IST" duration-ms="1716">
     <groups>
-      <group name="smokeTest">
-        <method signature="CreateOpportunityTest.CreateOpportunityWithName()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityTest@70cf32e3]" name="CreateOpportunityWithName" class="com.pygacrm.opportunity.CreateOpportunityTest"/>
-      </group> <!-- smokeTest -->
+      <group name="regTest">
+        <method signature="CreateOpportunityWithDropdownsTest.createOppWithDropdown()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityWithDropdownsTest@70cf32e3]" name="createOppWithDropdown" class="com.pygacrm.opportunity.CreateOpportunityWithDropdownsTest"/>
+      </group> <!-- regTest -->
     </groups>
-    <test started-at="2023-07-11T10:46:02 IST" name="Default test" finished-at="2023-07-11T10:46:48 IST" duration-ms="45583">
-      <class name="com.pygacrm.opportunity.CreateOpportunityTest">
-        <test-method is-config="true" signature="connectTODB()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityTest@70cf32e3]" started-at="2023-07-11T10:46:02 IST" name="connectTODB" finished-at="2023-07-11T10:46:02 IST" duration-ms="388" status="PASS">
+    <test started-at="2023-07-11T15:26:56 IST" name="Default test" finished-at="2023-07-11T15:26:57 IST" duration-ms="1716">
+      <class name="com.pygacrm.opportunity.CreateOpportunityWithDropdownsTest">
+        <test-method is-config="true" signature="connectTODB()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityWithDropdownsTest@70cf32e3]" started-at="2023-07-11T15:26:55 IST" name="connectTODB" finished-at="2023-07-11T15:26:56 IST" duration-ms="562" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[DataBase is Connected ]]>
             </line>
           </reporter-output>
         </test-method> <!-- connectTODB -->
-        <test-method is-config="true" signature="bTest()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityTest@70cf32e3]" started-at="2023-07-11T10:46:02 IST" name="bTest" finished-at="2023-07-11T10:46:02 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="bTest()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityWithDropdownsTest@70cf32e3]" started-at="2023-07-11T15:26:56 IST" name="bTest" finished-at="2023-07-11T15:26:56 IST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[BeforeTest]]>
             </line>
           </reporter-output>
         </test-method> <!-- bTest -->
-        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityTest@70cf32e3]" started-at="2023-07-11T10:46:02 IST" name="launchTheBrowser" finished-at="2023-07-11T10:46:06 IST" duration-ms="3397" status="PASS">
+        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityWithDropdownsTest@70cf32e3]" started-at="2023-07-11T15:26:56 IST" name="launchTheBrowser" finished-at="2023-07-11T15:26:57 IST" duration-ms="1616" status="FAIL">
+          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
+            <message>
+              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:802)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:593)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:818)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:799)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:593)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:792)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:593)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:286)
+at com.Pyga.Vtigergenericutlity.BaseClass.launchTheBrowser(BaseClass.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com
+at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:945)
+at io.github.bonigarcia.wdm.managers.ChromeDriverManager.getDriverUrls(ChromeDriverManager.java:100)
+at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:823)
+at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:670)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:587)
+... 33 more
+Caused by: java.net.UnknownHostException: chromedriver.storage.googleapis.com
+at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:409)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:172)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)
+at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:139)
+at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:930)
+... 37 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
           <reporter-output>
-            <line>
-              <![CDATA[BROWSER IS LAUNCHED ]]>
-            </line>
           </reporter-output>
         </test-method> <!-- launchTheBrowser -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityTest@70cf32e3]" started-at="2023-07-11T10:46:06 IST" name="loginToApp" finished-at="2023-07-11T10:46:09 IST" duration-ms="3422" status="PASS">
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityWithDropdownsTest@70cf32e3]" started-at="2023-07-11T15:26:57 IST" name="loginToApp" finished-at="2023-07-11T15:26:57 IST" duration-ms="0" status="SKIP">
           <reporter-output>
-            <line>
-              <![CDATA[Successfully Logged to Application]]>
-            </line>
           </reporter-output>
         </test-method> <!-- loginToApp -->
-        <test-method retried="true" signature="CreateOpportunityWithName()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityTest@70cf32e3]" started-at="2023-07-11T10:46:09 IST" name="CreateOpportunityWithName" finished-at="2023-07-11T10:46:17 IST" duration-ms="8036" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="createOppWithDropdown()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityWithDropdownsTest@70cf32e3]" started-at="2023-07-11T15:26:57 IST" name="createOppWithDropdown" finished-at="2023-07-11T15:26:57 IST" duration-ms="0" status="SKIP">
+          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
             <message>
-              <![CDATA[Cannot invoke "java.lang.CharSequence.toString()" because "s" is null]]>
+              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "s" is null
-at java.base/java.lang.String.contains(String.java:2852)
-at com.Pyga.Vtigergenericutlity.WebActionUtility.swithToWindowBasedOnURL(WebActionUtility.java:143)
-at com.pygacrm.opportunity.CreateOpportunityTest.CreateOpportunityWithName(CreateOpportunityTest.java:56)
+              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:802)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:593)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:818)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:799)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:593)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:792)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:593)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:286)
+at com.Pyga.Vtigergenericutlity.BaseClass.launchTheBrowser(BaseClass.java:52)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:848)
 at org.testng.TestRunner.run(TestRunner.java:621)
@@ -118,215 +167,72 @@ at org.testng.TestNG.run(TestNG.java:1082)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com
+at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:945)
+at io.github.bonigarcia.wdm.managers.ChromeDriverManager.getDriverUrls(ChromeDriverManager.java:100)
+at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:823)
+at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:670)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:587)
+... 33 more
+Caused by: java.net.UnknownHostException: chromedriver.storage.googleapis.com
+at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:409)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:172)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)
+at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:139)
+at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:930)
+... 37 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CreateOpportunityWithName -->
-        <test-method is-config="true" signature="logouoFromApp()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityTest@70cf32e3]" started-at="2023-07-11T10:46:17 IST" name="logouoFromApp" finished-at="2023-07-11T10:46:18 IST" duration-ms="976" status="PASS">
+        </test-method> <!-- createOppWithDropdown -->
+        <test-method is-config="true" signature="logouoFromApp()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityWithDropdownsTest@70cf32e3]" started-at="2023-07-11T15:26:57 IST" name="logouoFromApp" finished-at="2023-07-11T15:26:57 IST" duration-ms="0" status="SKIP">
           <reporter-output>
-            <line>
-              <![CDATA[Log Out from Application]]>
-            </line>
           </reporter-output>
         </test-method> <!-- logouoFromApp -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityTest@70cf32e3]" started-at="2023-07-11T10:46:18 IST" name="loginToApp" finished-at="2023-07-11T10:46:20 IST" duration-ms="1791" status="PASS">
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityWithDropdownsTest@70cf32e3]" started-at="2023-07-11T15:26:57 IST" name="closeTheBrowser" finished-at="2023-07-11T15:26:57 IST" duration-ms="0" status="SKIP">
           <reporter-output>
-            <line>
-              <![CDATA[Successfully Logged to Application]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method retried="true" signature="CreateOpportunityWithName()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityTest@70cf32e3]" started-at="2023-07-11T10:46:20 IST" name="CreateOpportunityWithName" finished-at="2023-07-11T10:46:26 IST" duration-ms="6371" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "java.lang.CharSequence.toString()" because "s" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "s" is null
-at java.base/java.lang.String.contains(String.java:2852)
-at com.Pyga.Vtigergenericutlity.WebActionUtility.swithToWindowBasedOnURL(WebActionUtility.java:143)
-at com.pygacrm.opportunity.CreateOpportunityTest.CreateOpportunityWithName(CreateOpportunityTest.java:56)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreateOpportunityWithName -->
-        <test-method is-config="true" signature="logouoFromApp()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityTest@70cf32e3]" started-at="2023-07-11T10:46:26 IST" name="logouoFromApp" finished-at="2023-07-11T10:46:28 IST" duration-ms="1382" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Log Out from Application]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- logouoFromApp -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityTest@70cf32e3]" started-at="2023-07-11T10:46:28 IST" name="loginToApp" finished-at="2023-07-11T10:46:30 IST" duration-ms="2182" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Successfully Logged to Application]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method retried="true" signature="CreateOpportunityWithName()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityTest@70cf32e3]" started-at="2023-07-11T10:46:30 IST" name="CreateOpportunityWithName" finished-at="2023-07-11T10:46:36 IST" duration-ms="6373" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "java.lang.CharSequence.toString()" because "s" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "s" is null
-at java.base/java.lang.String.contains(String.java:2852)
-at com.Pyga.Vtigergenericutlity.WebActionUtility.swithToWindowBasedOnURL(WebActionUtility.java:143)
-at com.pygacrm.opportunity.CreateOpportunityTest.CreateOpportunityWithName(CreateOpportunityTest.java:56)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreateOpportunityWithName -->
-        <test-method is-config="true" signature="logouoFromApp()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityTest@70cf32e3]" started-at="2023-07-11T10:46:36 IST" name="logouoFromApp" finished-at="2023-07-11T10:46:37 IST" duration-ms="1186" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Log Out from Application]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- logouoFromApp -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityTest@70cf32e3]" started-at="2023-07-11T10:46:37 IST" name="loginToApp" finished-at="2023-07-11T10:46:39 IST" duration-ms="1878" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Successfully Logged to Application]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method signature="CreateOpportunityWithName()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityTest@70cf32e3]" started-at="2023-07-11T10:46:39 IST" name="CreateOpportunityWithName" finished-at="2023-07-11T10:46:46 IST" duration-ms="6660" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "java.lang.CharSequence.toString()" because "s" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.toString()" because "s" is null
-at java.base/java.lang.String.contains(String.java:2852)
-at com.Pyga.Vtigergenericutlity.WebActionUtility.swithToWindowBasedOnURL(WebActionUtility.java:143)
-at com.pygacrm.opportunity.CreateOpportunityTest.CreateOpportunityWithName(CreateOpportunityTest.java:56)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreateOpportunityWithName -->
-        <test-method is-config="true" signature="logouoFromApp()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityTest@70cf32e3]" started-at="2023-07-11T10:46:46 IST" name="logouoFromApp" finished-at="2023-07-11T10:46:47 IST" duration-ms="1362" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Log Out from Application]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- logouoFromApp -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityTest@70cf32e3]" started-at="2023-07-11T10:46:47 IST" name="closeTheBrowser" finished-at="2023-07-11T10:46:48 IST" duration-ms="259" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Browser is Closed ]]>
-            </line>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
-        <test-method is-config="true" signature="aTest()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityTest@70cf32e3]" started-at="2023-07-11T10:46:48 IST" name="aTest" finished-at="2023-07-11T10:46:48 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="aTest()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityWithDropdownsTest@70cf32e3]" started-at="2023-07-11T15:26:57 IST" name="aTest" finished-at="2023-07-11T15:26:57 IST" duration-ms="2" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[AfterTest]]>
             </line>
           </reporter-output>
         </test-method> <!-- aTest -->
-        <test-method is-config="true" signature="closeDB()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityTest@70cf32e3]" started-at="2023-07-11T10:46:48 IST" name="closeDB" finished-at="2023-07-11T10:46:48 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="closeDB()[pri:0, instance:com.pygacrm.opportunity.CreateOpportunityWithDropdownsTest@70cf32e3]" started-at="2023-07-11T15:26:57 IST" name="closeDB" finished-at="2023-07-11T15:26:57 IST" duration-ms="2" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[DataBase connection  is Closed ]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeDB -->
-      </class> <!-- com.pygacrm.opportunity.CreateOpportunityTest -->
+      </class> <!-- com.pygacrm.opportunity.CreateOpportunityWithDropdownsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

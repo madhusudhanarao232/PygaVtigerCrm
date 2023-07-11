@@ -3,19 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.pygacrm.opportunity.CreateOpportunityTest">
+      <class name="com.pygacrm.opportunity.CreateOpportunityWithDropdownsTest">
         <methods>
           <include name="connectTODB"/>
           <include name="logouoFromApp"/>
           <include name="launchTheBrowser"/>
-          <include name="CreateOpportunityWithName"/>
           <include name="closeDB"/>
+          <include name="createOppWithDropdown"/>
           <include name="closeTheBrowser"/>
           <include name="bTest"/>
           <include name="loginToApp"/>
           <include name="aTest"/>
         </methods>
-      </class> <!-- com.pygacrm.opportunity.CreateOpportunityTest -->
+      </class> <!-- com.pygacrm.opportunity.CreateOpportunityWithDropdownsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

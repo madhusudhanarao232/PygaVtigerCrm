@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 /**
 *   This Class is Used to Open Partial Organigation List Users Page
-/
+*/
 public class ChildWindowPageOrg {
 	// Declaration
 	@FindBy(id = "search_txt")private WebElement searchtxtInChildWindow;
