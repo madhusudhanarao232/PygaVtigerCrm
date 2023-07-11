@@ -17,6 +17,7 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DataProviderExcel {
+	// Implementing the accepting data in Test method
 @Test(dataProvider="data")
 	public void login(String un,String pwd)
 	{
@@ -33,6 +34,7 @@ public class DataProviderExcel {
 		driver.close();	
 	}
 		}
+   // Providing data multiple data to dataprovider and it is accepting the multiple data
 	@DataProvider
 	public Object[][] data() throws EncryptedDocumentException, IOException
 	{

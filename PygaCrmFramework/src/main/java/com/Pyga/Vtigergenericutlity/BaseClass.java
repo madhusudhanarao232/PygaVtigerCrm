@@ -15,8 +15,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
-
 import com.Pyga.VtigerPOM.HomePage;
 import com.Pyga.VtigerPOM.LoginPage;
 
@@ -46,8 +44,8 @@ public class BaseClass {
 		String URL = fLib.getDataFromProperties(ENV_FILE_PATH, "url");
 		
 		/* FOR PARAMETERS SEND BY USING COMMAND LINE for Normal Execution Comment these TWO lines */
-		//String BROWSER=System.getProperty("browser");
-		//String URL=System.getProperty("url");
+//		String BROWSER=System.getProperty("browser");
+//		String URL=System.getProperty("url");
 		
 		switch (BROWSER) {
 		case "chrome":
@@ -61,7 +59,7 @@ public class BaseClass {
 			WebDriverManager.edgedriver().setup();
 			driver=new EdgeDriver();
 			break;
-		default:
+	   	default:
 			WebDriverManager.chromedriver().setup();
 			driver=new ChromeDriver();
 			break;

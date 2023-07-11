@@ -1,25 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="com.Pyga.Vtigergenericutlity.ListenerImp"/>
-    <listener class-name="com.Pyga.Vtigergenericutlity.ITransform"/>
-  </listeners>
-  <test thread-count="5" parallel="classes" name="Test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="smokeTest"/>
+        <include name="regressionTest"/>
+      </run>
+    </groups>
     <classes>
-      <class name="com.pygacrm.opportunity.CreateOpportunityWithDropdownsTest">
+      <class name="com.pygacrm.opportunity.CreateOpportunityTest">
+        <methods>
+          <include name="connectTODB"/>
+          <include name="logouoFromApp"/>
+          <include name="launchTheBrowser"/>
+          <include name="CreateOpportunityWithName"/>
+          <include name="closeDB"/>
+          <include name="closeTheBrowser"/>
+          <include name="loginToApp"/>
+          <include name="bTest"/>
+          <include name="aTest"/>
+        </methods>
+      </class> <!-- com.pygacrm.opportunity.CreateOpportunityTest -->
+      <class name="com.pygacrm.opportunity.CreateOpportunityWithRelatedToContactsTest">
         <methods>
           <include name="logouoFromApp"/>
           <include name="connectTODB"/>
           <include name="launchTheBrowser"/>
           <include name="closeDB"/>
-          <include name="createOppWithDropdown"/>
           <include name="closeTheBrowser"/>
-          <include name="bTest"/>
           <include name="loginToApp"/>
+          <include name="bTest"/>
+          <include name="createOPPWithContact"/>
           <include name="aTest"/>
         </methods>
-      </class> <!-- com.pygacrm.opportunity.CreateOpportunityWithDropdownsTest -->
+      </class> <!-- com.pygacrm.opportunity.CreateOpportunityWithRelatedToContactsTest -->
+      <class name="com.pygacrm.opportunity.CreateOpportuninyAllFieldsTest">
+        <methods>
+          <include name="logouoFromApp"/>
+          <include name="connectTODB"/>
+          <include name="launchTheBrowser"/>
+          <include name="closeDB"/>
+          <include name="closeTheBrowser"/>
+          <include name="loginToApp"/>
+          <include name="bTest"/>
+          <include name="opportunityWithAllFields"/>
+          <include name="aTest"/>
+        </methods>
+      </class> <!-- com.pygacrm.opportunity.CreateOpportuninyAllFieldsTest -->
+      <class name="com.pygacrm.opportunity.CreateOpportunityWithExpectedCloseDateTest">
+        <methods>
+          <include name="logouoFromApp"/>
+          <include name="connectTODB"/>
+          <include name="launchTheBrowser"/>
+          <include name="closeDB"/>
+          <include name="closeTheBrowser"/>
+          <include name="loginToApp"/>
+          <include name="bTest"/>
+          <include name="expectedCloseDate"/>
+          <include name="aTest"/>
+        </methods>
+      </class> <!-- com.pygacrm.opportunity.CreateOpportunityWithExpectedCloseDateTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
